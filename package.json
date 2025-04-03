@@ -6,12 +6,18 @@
     "preview": "wrangler dev",
     "deploy": "wrangler deploy",
     "test": "vitest",
-    "test:cov": "vitest run --coverage"
+    "test:cov": "vitest run --coverage",
+    "lint": "pnpm biome lint .",
+    "lint:fix": "pnpm biome lint --apply .",
+    "format": "pnpm biome format .",
+    "format:fix": "pnpm biome format --write .",
+    "check": "pnpm biome check --write ."
   },
   "dependencies": {
     "hono": "^4.7.5"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@cloudflare/vite-plugin": "^0.1.15",
     "@cloudflare/vitest-pool-workers": "^0.8.9",
     "@cloudflare/workers-types": "^4.20250214.0",

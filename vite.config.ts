@@ -1,5 +1,5 @@
 // import { cloudflare } from '@cloudflare/vite-plugin'
-import { defineConfig } from 'vitest/config'
+import { defineConfig } from 'vitest/config';
 // import ssrHotReload from 'vite-plugin-ssr-hot-reload'
 
 export default defineConfig({
@@ -17,4 +17,4 @@ export default defineConfig({
       reporter: ['text', 'json', 'html'],
     },
   },
-})
+});
