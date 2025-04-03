@@ -1,0 +1,439 @@
+<project>
+  <source>/Users/m/c/playgrounds/workshop-2025-04-03/notes/my-app</source>
+  <timestamp>20250403-103502</timestamp>
+  <command>ffg -y</command>
+  <git>
+    <branch>main</branch>
+    <remote>git@github.com:CoffiDev/my-app.git</remote>
+    <commit>00e9b95e950ec5b90b62c6a6de3413cfb853646d</commit>
+    <commitDate>Thu Apr 3 10:19:01 2025 -0600</commitDate>
+  </git>
+</project>
+<summary>
+  Analyzing: /Users/m/c/playgrounds/workshop-2025-04-03/notes/my-app
+Max file size: 10485760KB
+Skipping build artifacts and generated files
+Files analyzed: 12
+</summary>
+<directoryTree>
+└── my-app/
+  ├── .cursor/
+  │ └── rules/
+  │   ├── config.mdc
+  │   └── git.mdc
+  ├── .gitignore
+  ├── contexts.txt
+  ├── package.json
+  ├── public/
+  │ └── static/
+  │   └── style.css
+  ├── README.md
+  ├── src/
+  │ ├── index.tsx
+  │ └── renderer.tsx
+  ├── tsconfig.json
+  ├── vite.config.ts
+  └── wrangler.jsonc
+
+</directoryTree>
+<files>
+  <file path=".cursor/rules/config.mdc">
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Always use pnpm
+
+
+  </file>
+  <file path=".cursor/rules/git.mdc">
+---
+description:
+globs:
+alwaysApply: true
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+
+  </file>
+  <file path=".gitignore">
+# prod
+dist/
+
+# dev
+.yarn/
+!.yarn/releases
+.vscode/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
+
+# deps
+node_modules/
+.wrangler
+
+# env
+.env
+.env.production
+.dev.vars
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# misc
+.DS_Store
+
+  </file>
+  <file path="contexts.txt">
+&lt;project&gt;
+  &lt;source&gt;/Users/m/c/playgrounds/workshop-2025-04-03/notes/my-app&lt;/source&gt;
+  &lt;timestamp&gt;20250403-102239&lt;/timestamp&gt;
+  &lt;command&gt;ffg -y&lt;/command&gt;
+  &lt;git&gt;
+    &lt;branch&gt;main&lt;/branch&gt;
+    &lt;remote&gt;git@github.com:CoffiDev/my-app.git&lt;/remote&gt;
+    &lt;commit&gt;00e9b95e950ec5b90b62c6a6de3413cfb853646d&lt;/commit&gt;
+    &lt;commitDate&gt;Thu Apr 3 10:19:01 2025 -0600&lt;/commitDate&gt;
+  &lt;/git&gt;
+&lt;/project&gt;
+&lt;summary&gt;
+  Analyzing: /Users/m/c/playgrounds/workshop-2025-04-03/notes/my-app
+Max file size: 10485760KB
+Skipping build artifacts and generated files
+Files analyzed: 9
+&lt;/summary&gt;
+&lt;directoryTree&gt;
+└── my-app/
+  ├── .gitignore
+  ├── package.json
+  ├── public/
+  │ └── static/
+  │   └── style.css
+  ├── README.md
+  ├── src/
+  │ ├── index.tsx
+  │ └── renderer.tsx
+  ├── tsconfig.json
+  ├── vite.config.ts
+  └── wrangler.jsonc
+
+&lt;/directoryTree&gt;
+&lt;files&gt;
+  &lt;file path=&quot;.gitignore&quot;&gt;
+# prod
+dist/
+
+# dev
+.yarn/
+!.yarn/releases
+.vscode/*
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/shelf
+
+# deps
+node_modules/
+.wrangler
+
+# env
+.env
+.env.production
+.dev.vars
+
+# logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# misc
+.DS_Store
+
+  &lt;/file&gt;
+  &lt;file path=&quot;package.json&quot;&gt;
+{
+  &amp;quot;name&amp;quot;: &amp;quot;my-app&amp;quot;,
+  &amp;quot;type&amp;quot;: &amp;quot;module&amp;quot;,
+  &amp;quot;scripts&amp;quot;: {
+    &amp;quot;dev&amp;quot;: &amp;quot;vite&amp;quot;,
+    &amp;quot;preview&amp;quot;: &amp;quot;wrangler dev&amp;quot;,
+    &amp;quot;deploy&amp;quot;: &amp;quot;wrangler deploy&amp;quot;
+  },
+  &amp;quot;dependencies&amp;quot;: {
+    &amp;quot;hono&amp;quot;: &amp;quot;^4.7.5&amp;quot;
+  },
+  &amp;quot;devDependencies&amp;quot;: {
+    &amp;quot;@cloudflare/vite-plugin&amp;quot;: &amp;quot;^0.1.15&amp;quot;,
+    &amp;quot;@cloudflare/workers-types&amp;quot;: &amp;quot;^4.20250214.0&amp;quot;,
+    &amp;quot;vite&amp;quot;: &amp;quot;^6.1.1&amp;quot;,
+    &amp;quot;vite-plugin-ssr-hot-reload&amp;quot;: &amp;quot;^0.4.1&amp;quot;,
+    &amp;quot;wrangler&amp;quot;: &amp;quot;^4.4.0&amp;quot;
+  }
+}
+  &lt;/file&gt;
+  &lt;file path=&quot;public/static/style.css&quot;&gt;
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  &lt;/file&gt;
+  &lt;file path=&quot;README.md&quot;&gt;
+```txt
+npm install
+npm run dev
+```
+
+```txt
+npm run deploy
+```
+
+  &lt;/file&gt;
+  &lt;file path=&quot;src/index.tsx&quot;&gt;
+import { Hono } from &amp;apos;hono&amp;apos;
+import { renderer } from &amp;apos;./renderer&amp;apos;
+
+const app = new Hono()
+
+app.use(renderer)
+
+app.get(&amp;apos;/&amp;apos;, (c) =&amp;gt; {
+  return c.render(&amp;lt;h1&amp;gt;Hello!&amp;lt;/h1&amp;gt;)
+})
+
+export default app
+
+  &lt;/file&gt;
+  &lt;file path=&quot;src/renderer.tsx&quot;&gt;
+import { jsxRenderer } from &amp;apos;hono/jsx-renderer&amp;apos;
+
+export const renderer = jsxRenderer(({ children }) =&amp;gt; {
+  return (
+    &amp;lt;html&amp;gt;
+      &amp;lt;head&amp;gt;
+        &amp;lt;link href=&amp;quot;/static/style.css&amp;quot; rel=&amp;quot;stylesheet&amp;quot; /&amp;gt;
+      &amp;lt;/head&amp;gt;
+      &amp;lt;body&amp;gt;{children}&amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;
+  )
+})
+
+  &lt;/file&gt;
+  &lt;file path=&quot;tsconfig.json&quot;&gt;
+{
+  &amp;quot;compilerOptions&amp;quot;: {
+    &amp;quot;target&amp;quot;: &amp;quot;ESNext&amp;quot;,
+    &amp;quot;module&amp;quot;: &amp;quot;ESNext&amp;quot;,
+    &amp;quot;moduleResolution&amp;quot;: &amp;quot;Bundler&amp;quot;,
+    &amp;quot;strict&amp;quot;: true,
+    &amp;quot;skipLibCheck&amp;quot;: true,
+    &amp;quot;lib&amp;quot;: [
+      &amp;quot;ESNext&amp;quot;
+    ],
+    &amp;quot;types&amp;quot;: [
+      &amp;quot;@cloudflare/workers-types/2023-07-01&amp;quot;,
+      &amp;quot;vite/client&amp;quot;
+    ],
+    &amp;quot;jsx&amp;quot;: &amp;quot;react-jsx&amp;quot;,
+    &amp;quot;jsxImportSource&amp;quot;: &amp;quot;hono/jsx&amp;quot;
+  },
+}
+  &lt;/file&gt;
+  &lt;file path=&quot;vite.config.ts&quot;&gt;
+import { cloudflare } from &amp;apos;@cloudflare/vite-plugin&amp;apos;
+import { defineConfig } from &amp;apos;vite&amp;apos;
+import ssrHotReload from &amp;apos;vite-plugin-ssr-hot-reload&amp;apos;
+
+export default defineConfig({
+  plugins: [ssrHotReload(), cloudflare()]
+})
+
+  &lt;/file&gt;
+  &lt;file path=&quot;wrangler.jsonc&quot;&gt;
+{
+  &amp;quot;$schema&amp;quot;: &amp;quot;node_modules/wrangler/config-schema.json&amp;quot;,
+  &amp;quot;name&amp;quot;: &amp;quot;my-app&amp;quot;,
+  &amp;quot;compatibility_date&amp;quot;: &amp;quot;2024-04-01&amp;quot;,
+  &amp;quot;main&amp;quot;: &amp;quot;./src/index.tsx&amp;quot;,
+  &amp;quot;assets&amp;quot;: {
+    &amp;quot;directory&amp;quot;: &amp;quot;./public&amp;quot;
+  }
+  // &amp;quot;vars&amp;quot;: {
+  //   &amp;quot;MY_VAR&amp;quot;: &amp;quot;my-variable&amp;quot;
+  // },
+  // &amp;quot;kv_namespaces&amp;quot;: [
+  //   {
+  //     &amp;quot;binding&amp;quot;: &amp;quot;MY_KV_NAMESPACE&amp;quot;,
+  //     &amp;quot;id&amp;quot;: &amp;quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&amp;quot;
+  //   }
+  // ],
+  // &amp;quot;r2_buckets&amp;quot;: [
+  //   {
+  //     &amp;quot;binding&amp;quot;: &amp;quot;MY_BUCKET&amp;quot;,
+  //     &amp;quot;bucket_name&amp;quot;: &amp;quot;my-bucket&amp;quot;
+  //   }
+  // ],
+  // &amp;quot;d1_databases&amp;quot;: [
+  //   {
+  //     &amp;quot;binding&amp;quot;: &amp;quot;MY_DB&amp;quot;,
+  //     &amp;quot;database_name&amp;quot;: &amp;quot;my-database&amp;quot;,
+  //     &amp;quot;database_id&amp;quot;: &amp;quot;&amp;quot;
+  //   }
+  // ],
+  // &amp;quot;ai&amp;quot;: {
+  //   &amp;quot;binding&amp;quot;: &amp;quot;AI&amp;quot;
+  // }
+}  &lt;/file&gt;
+&lt;/files&gt;
+
+  </file>
+  <file path="package.json">
+{
+  &quot;name&quot;: &quot;my-app&quot;,
+  &quot;type&quot;: &quot;module&quot;,
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;vite&quot;,
+    &quot;preview&quot;: &quot;wrangler dev&quot;,
+    &quot;deploy&quot;: &quot;wrangler deploy&quot;
+  },
+  &quot;dependencies&quot;: {
+    &quot;hono&quot;: &quot;^4.7.5&quot;
+  },
+  &quot;devDependencies&quot;: {
+    &quot;@cloudflare/vite-plugin&quot;: &quot;^0.1.15&quot;,
+    &quot;@cloudflare/workers-types&quot;: &quot;^4.20250214.0&quot;,
+    &quot;vite&quot;: &quot;^6.1.1&quot;,
+    &quot;vite-plugin-ssr-hot-reload&quot;: &quot;^0.4.1&quot;,
+    &quot;wrangler&quot;: &quot;^4.4.0&quot;
+  }
+}
+  </file>
+  <file path="public/static/style.css">
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+  </file>
+  <file path="README.md">
+```txt
+npm install
+npm run dev
+```
+
+```txt
+npm run deploy
+```
+
+  </file>
+  <file path="src/index.tsx">
+import { Hono } from &apos;hono&apos;
+import { renderer } from &apos;./renderer&apos;
+
+const app = new Hono()
+
+app.use(renderer)
+
+app.get(&apos;/&apos;, (c) =&gt; {
+  return c.render(&lt;h1&gt;Hello!&lt;/h1&gt;)
+})
+
+export default app
+
+  </file>
+  <file path="src/renderer.tsx">
+import { jsxRenderer } from &apos;hono/jsx-renderer&apos;
+
+export const renderer = jsxRenderer(({ children }) =&gt; {
+  return (
+    &lt;html&gt;
+      &lt;head&gt;
+        &lt;link href=&quot;/static/style.css&quot; rel=&quot;stylesheet&quot; /&gt;
+      &lt;/head&gt;
+      &lt;body&gt;{children}&lt;/body&gt;
+    &lt;/html&gt;
+  )
+})
+
+  </file>
+  <file path="tsconfig.json">
+{
+  &quot;compilerOptions&quot;: {
+    &quot;target&quot;: &quot;ESNext&quot;,
+    &quot;module&quot;: &quot;ESNext&quot;,
+    &quot;moduleResolution&quot;: &quot;Bundler&quot;,
+    &quot;strict&quot;: true,
+    &quot;skipLibCheck&quot;: true,
+    &quot;lib&quot;: [
+      &quot;ESNext&quot;
+    ],
+    &quot;types&quot;: [
+      &quot;@cloudflare/workers-types/2023-07-01&quot;,
+      &quot;vite/client&quot;
+    ],
+    &quot;jsx&quot;: &quot;react-jsx&quot;,
+    &quot;jsxImportSource&quot;: &quot;hono/jsx&quot;
+  },
+}
+  </file>
+  <file path="vite.config.ts">
+import { cloudflare } from &apos;@cloudflare/vite-plugin&apos;
+import { defineConfig } from &apos;vite&apos;
+import ssrHotReload from &apos;vite-plugin-ssr-hot-reload&apos;
+
+export default defineConfig({
+  plugins: [ssrHotReload(), cloudflare()]
+})
+
+  </file>
+  <file path="wrangler.jsonc">
+{
+  &quot;$schema&quot;: &quot;node_modules/wrangler/config-schema.json&quot;,
+  &quot;name&quot;: &quot;my-app&quot;,
+  &quot;compatibility_date&quot;: &quot;2024-04-01&quot;,
+  &quot;main&quot;: &quot;./src/index.tsx&quot;,
+  &quot;assets&quot;: {
+    &quot;directory&quot;: &quot;./public&quot;
+  }
+  // &quot;vars&quot;: {
+  //   &quot;MY_VAR&quot;: &quot;my-variable&quot;
+  // },
+  // &quot;kv_namespaces&quot;: [
+  //   {
+  //     &quot;binding&quot;: &quot;MY_KV_NAMESPACE&quot;,
+  //     &quot;id&quot;: &quot;xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot;
+  //   }
+  // ],
+  // &quot;r2_buckets&quot;: [
+  //   {
+  //     &quot;binding&quot;: &quot;MY_BUCKET&quot;,
+  //     &quot;bucket_name&quot;: &quot;my-bucket&quot;
+  //   }
+  // ],
+  // &quot;d1_databases&quot;: [
+  //   {
+  //     &quot;binding&quot;: &quot;MY_DB&quot;,
+  //     &quot;database_name&quot;: &quot;my-database&quot;,
+  //     &quot;database_id&quot;: &quot;&quot;
+  //   }
+  // ],
+  // &quot;ai&quot;: {
+  //   &quot;binding&quot;: &quot;AI&quot;
+  // }
+}  </file>
+</files>
